@@ -1,8 +1,12 @@
 public class Main {
-    String input = "madam";
-    String reversed = "";
-for (int i = input.length() - 1; i >= 0; i--) {
-        reversed = reversed + input.charAt(i);
+    String input = "radar";
+    char[] chars = input.toCharArray();
+    int start = 0, end = chars.length - 1;
+    boolean isPalindrome = true;
+while (start < end) {
+        if (chars[start++] != chars[end--]) {
+            isPalindrome = false;
+            break;
+        }
     }
-    boolean result = input.equals(reversed);
 }
