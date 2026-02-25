@@ -1,8 +1,7 @@
 public class Main {
-    String input = "refer";
-    Deque<Character> deque = new ArrayDeque<>();
-for (char c : input.toCharArray()) deque.addLast(c);
-while (deque.size() > 1) {
-        if (deque.removeFirst() != deque.removeLast()) { isPalindrome = false; break; }
+    LinkedList<Character> list = new LinkedList<>();
+for (char c : "level".toCharArray()) list.add(c);
+while (list.size() > 1) {
+        if (list.removeFirst() != list.removeLast()) { isPalindrome = false; break; }
     }
 }
